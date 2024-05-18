@@ -15,17 +15,18 @@ Extract data from Reddit using its API.
 - Store the raw data into an S3 bucket from Airflow.
 - Transform the data using AWS Glue and Amazon Athena.
 - Load the transformed data into Amazon Redshift for analytics and querying.
-Architecture
 
-### Components:
+### Architecture
 
-- Reddit API: Source of the data.
-- Apache Airflow & Celery: Orchestrates the ETL process and manages task distribution.
-- PostgreSQL: Temporary storage and metadata management.
-- Amazon S3: Raw data storage.
-- AWS Glue: Data cataloging and ETL jobs.
-- Amazon Athena: SQL-based data transformation.
-- Amazon Redshift: Data warehousing and analytics.
+**Components:**
+
+- **Reddit API**: Source of the data.
+- **Apache Airflow & Celery**: Orchestrates the ETL process and manages task distribution.
+- **PostgreSQL**: Temporary storage and metadata management.
+- **Amazon S3**: Raw data storage.
+- **AWS Glue**: Data cataloging and ETL jobs.
+- **Amazon Athena**: SQL-based data transformation.
+- **Amazon Redshift**: Data warehousing and analytics.
 
 ### Prerequisites
 AWS Account with appropriate permissions for S3, Glue, Athena, and Redshift.
@@ -54,7 +55,7 @@ Rename the configuration file and add your credentials:
 ```mv config/config.conf.example config/config.conf```
 
 **Start the Containers**
-docker-compose up -d
+```docker-compose up -d```
 
 **Launch Airflow Web UI**
 Open the Airflow web UI:
