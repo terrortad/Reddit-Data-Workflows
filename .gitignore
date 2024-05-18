@@ -1,0 +1,18 @@
+# Ignore log files and directories
+logs/
+*.log
+
+# Ignore Python virtual environments
+venv/
+airflow_venv/
+
+# Ignore Docker-related files
+.env
+docker-compose.yml
+
+# Ignore data output files
+data/output/
+
+# Ignore other unnecessary files
+__pycache__/
+*.pyc
